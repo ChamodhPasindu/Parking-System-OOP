@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementAddDriverController">
+   <children>
+      <AnchorPane prefHeight="495.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Add Driver" textFill="#4000ee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtName" layoutX="180.0" layoutY="65.0" prefHeight="39.0" prefWidth="283.0" promptText="Driver Name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtNIC" layoutX="180.0" layoutY="122.0" prefHeight="39.0" prefWidth="283.0" promptText="NIC">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtLicense" layoutX="180.0" layoutY="177.0" prefHeight="39.0" prefWidth="283.0" promptText="Driving License Number">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="txtAddress" layoutX="180.0" layoutY="231.0" prefHeight="66.0" prefWidth="283.0" promptText="Address">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextArea>
+            <JFXTextField fx:id="txtNumber" layoutX="180.0" layoutY="323.0" prefHeight="39.0" prefWidth="283.0" promptText="Contact Number">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnAddDriver" alignment="CENTER" buttonType="RAISED" layoutX="202.0" layoutY="405.0" onAction="#addDriver" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #59F75E;" text="Add Driver" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

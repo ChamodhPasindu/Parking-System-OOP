@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="600.0" style="-fx-background-color: #E5E4E2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementDriversController">
+   <children>
+      <Label layoutX="6.0" layoutY="1.0" text="Drivers Details" textFill="#4000ee">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblDriverDetails" layoutX="20.0" layoutY="51.0" prefHeight="430.0" prefWidth="560.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="125.0" text="Name" />
+          <TableColumn fx:id="colNic" prefWidth="104.0" text="NIC" />
+            <TableColumn fx:id="colLicense" prefWidth="106.0" text="License Number" />
+            <TableColumn fx:id="colAddress" prefWidth="114.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="110.0" text="Contact" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="507.0" layoutY="16.0" onAction="#deleteOnAction" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #ef3848;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

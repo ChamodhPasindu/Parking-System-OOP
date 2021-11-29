@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementAddVehicleController">
+   <children>
+      <AnchorPane prefHeight="495.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Add Vehicle" textFill="#4000ee">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtNumber" layoutX="181.0" layoutY="93.0" prefHeight="39.0" prefWidth="218.0" promptText="Vehicle Number">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtWeight" layoutX="181.0" layoutY="169.0" prefHeight="39.0" prefWidth="218.0" promptText="Maximum Weight">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPassengers" layoutX="181.0" layoutY="248.0" prefHeight="39.0" prefWidth="218.0" promptText="No of passengers">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cmbType" layoutX="300.0" layoutY="332.0" prefHeight="25.0" prefWidth="102.0" />
+            <Label layoutX="185.0" layoutY="331.0" text="Vehicle Type">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="185.0" layoutY="403.0" onAction="#addVehicle" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #59F75E;" text="Add Vehicle" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
